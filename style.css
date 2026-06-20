@@ -11,6 +11,7 @@ body{
 }
 .hero-container{
      background-color: #1F2937;
+     width: 100%;
       padding: 16px 200px 120px;
 }
 .nav{
@@ -36,21 +37,24 @@ body{
 }
 .hero-content{
     display: flex;
-    justify-content: center;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    
 }
 .heroinfo{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    align-items: flex-start;;
     flex: 1;
-    gap: 30px;
-     margin : 40px;
-     padding: auto;
+    gap: 10px;
+    width: 50%;
+    
 }
 .heroinfo h1{
     color: #F9FAF8;
     font-weight: 900;
     font-size: 48px;
+    width: 80%;
 }
 .heroinfo p {
       font-size: 18px;
@@ -72,10 +76,13 @@ body{
       width: fit-content;
     }
     .image-container{
+    display: flex;
+    justify-content: center;
     flex: 1;
-
-    }
-     .image-placeholder {
+    
+}
+.image-placeholder {
+        width:80%;
       background-color: #6D747D;
       color: #F9FAF8;
       display: flex;
@@ -84,3 +91,6 @@ body{
       height: 230px;
       font-size: 18px;
     }
+
+
+    
